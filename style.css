@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.nav-list {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: lightgrey;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.nav-item {
+  list-style-type: none;
+  margin-right: 20px;
+}
+.nav-item:last-of-type {
+  margin-right: 0;
+}
+.link {
+  color: black;
+  text-decoration: none;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  width: 200px;
+  text-align: center;
+  /* border: 1px solid grey; */
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 10px;
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.card-title {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.card-rating {
+  margin-bottom: 5px;
+}
+
+.card-price {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.card-button {
+  background-color: lightseagreen;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+.card-button:hover {
+  background-color: rgb(29, 87, 83);
+}
+
+.card:hover {
+  box-shadow: 5px 5px 10px rgba(216, 14, 14, 0.575);
+}
+
+.link:hover {
+  border-bottom: 1px dotted white;
+}
