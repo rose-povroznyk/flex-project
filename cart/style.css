@@ -28,49 +28,55 @@
   text-decoration: none;
 }
 
-h1 {
-  text-align: center;
-  margin-top: 50px;
-}
-
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.card {
-  width: 200px;
-  text-align: center;
-  /* border: 1px solid grey; */
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
-  padding: 10px;
-  margin: 15px;
+.cart {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 55px;
 }
 
-.card img {
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-  margin-bottom: 10px;
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin: 15px;
+  padding: 15px;
+  border-top: 2px dashed black;
+  border-bottom: 2px dashed black;
 }
 
-.card-title {
+.item img {
+  width: 100px;
+  height: 100px;
+  margin-right: 10px;
+}
+
+.item-controls {
+  display: flex;
+  align-items: center;
+}
+
+.quantity {
+  margin: 0 10px;
+}
+
+.total {
+  margin-top: 20px;
+}
+
+.total-price {
   font-weight: bold;
-  margin-bottom: 5px;
-}
-.card-rating {
-  margin-bottom: 5px;
 }
 
-.card-price {
-  font-weight: bold;
-  margin-bottom: 10px;
+.checkout {
+  margin-top: 20px;
 }
+
+.remove-btn {
+  margin-left: 15px;
+}
+
 .card-button {
   background-color: lightseagreen;
   color: white;
@@ -83,10 +89,27 @@ h1 {
   background-color: rgb(29, 87, 83);
 }
 
-.card:hover {
-  box-shadow: 5px 5px 10px rgba(87, 79, 206, 0.479);
-}
-
 .link:hover {
   border-bottom: 1px dotted white;
+}
+
+@media screen and (max-width: 400px) {
+  .item {
+    flex-direction: column;
+  }
+
+  .item-controls {
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .item-price {
+    display: flex;
+    justify-content: center;
+    margin: 5px 0;
+  }
+
+  .remove-btn {
+    margin-left: 0;
+  }
 }

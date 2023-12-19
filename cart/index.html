@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <nav>
+      <ul class="nav-list">
+        <li class="nav-item"><a class="link" href="#">Home</a></li>
+        <li class="nav-item"><a class="link" href="../index.html">Shop</a></li>
+        <li class="nav-item"><a class="link" href="#">Cart</a></li>
+      </ul>
+    </nav>
+
+    <section class="cart">
+      <h2>Cart</h2>
+
+      <!-- Товар 1 -->
+      <article class="item">
+        <img
+          src="https://loadup.com.ua/content/images/29/480x480l50nn0/kolektsiina-fihurka-nendroid-kakashy-naruto-724-57565180961536.jpg"
+          alt="Samsung Galaxy A24"
+        />
+        <div>
+          <span>Product 3</span>
+          <div class="item-controls">
+            <button class="decrease-quantity card-button">-</button>
+            <span class="quantity">1</span>
+            <button class="increase-quantity card-button">+</button>
+          </div>
+          <span class="item-price">100$</span>
+        </div>
+        <button class="remove-btn card-button">Delete</button>
+      </article>
+
+      <!-- Товар 2 -->
+      <article class="item">
+        <img
+          src="https://images.shafastatic.net/1357022131"
+          alt="Xiaomi Redmi 12"
+        />
+        <div>
+          <span>Product 5</span>
+          <div class="item-controls">
+            <button class="decrease-quantity card-button">-</button>
+            <span class="quantity">1</span>
+            <button class="increase-quantity card-button">+</button>
+          </div>
+          <span class="item-price">200$</span>
+        </div>
+        <button class="remove-btn card-button">Delete</button>
+      </article>
+
+      <!-- Final -->
+      <article class="total">
+        <span>Total: </span>
+        <span class="total-price">300$</span>
+      </article>
+
+      <button class="checkout card-button">To order</button>
+    </section>
+  </body>
+</html>
